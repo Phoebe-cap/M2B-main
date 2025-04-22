@@ -15,10 +15,16 @@ conda activate m2b
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
+
 ## Training
 ### Prepare datasets
 Prepare face forgery datasets: [FaceForensics++](https://github.com/ondyari/FaceForensics), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), [DFD](https://research.google/blog/contributing-data-to-deepfake-detection-research/), [DF-1.0](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/dataset).
 ### Train Models
 ```
-python train.py
+python train.py --train_folder [your_train_path] --val_folder [your_val_path] --out_folder [your_output_path] --batch_size 16 --epoches 32
+```
+
+## Testing
+```
+python test.py --test_path [your_test_path] --batch_size 16
 ```
