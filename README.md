@@ -17,4 +17,8 @@ pip install -r requirements.txt
 ```
 ## Training
 ### Prepare datasets
-Prepare face forgery datasets: [FaceForensics++](https://github.com/ondyari/FaceForensics), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), [DFD](https://research.google/blog/contributing-data-to-deepfake-detection-research/),[DF-1.0](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/dataset).
+Prepare face forgery datasets: [FaceForensics++](https://github.com/ondyari/FaceForensics), [Celeb-DF](https://github.com/yuezunli/celeb-deepfakeforensics), [DFD](https://research.google/blog/contributing-data-to-deepfake-detection-research/), [DF-1.0](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master/dataset).
+### Train Models
+```
+python train.py
+```
