@@ -6,3 +6,10 @@ Visual content forgery techniques, such as Deepfake, have rapidly advanced in re
 <p align="center">
 <img src="figs/pipeline.png" width=60%>
 </p>
+## Requirements
+```
+conda create -n m2b python=3.9
+conda activate m2b
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -r requirements.txt
+```
